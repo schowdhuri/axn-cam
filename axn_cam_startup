@@ -1,0 +1,12 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          Action Camera
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Action Camera
+# Description:       This script starts the axn_cam daemon
+### END INIT INFO
+cd /opt/axn_cam
+sudo ./start >> /var/log/axn_cam.log
