@@ -15,6 +15,10 @@ Poor man's action camera using Raspberry Pi Zero
 1. Register script to be run at start-up `sudo update-rc.d axn_cam_startup defaults`
 1. If you ever want to remove the script from start-up, run: `sudo update-rc.d -f  axn_cam_startup remove`
 
+## Wiring
+
+Check out [my blogpost](https://www.desdevpro.com/article/raspberry-pi-action-camera)
+
 ## Troubleshooting
 1. Access issues can be resolved by adding write permissions to the index file, log file and the `/opt/axn_cam` directory
 1. Make sure `/opt/axn_cam/start` and `/etc/init.d/axn_cam_startup` are executable
